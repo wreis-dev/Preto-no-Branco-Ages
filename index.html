@@ -3,30 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
 </head>
 <body>
-  <div id ="calculator">
-    <input id="display" type="text" readonly>
-    <div id="keys">
-        <button onclick="appendToDisplay('+')">+</button>
-        <button onclick="appendToDisplay('7')">7</button>
-        <button onclick="appendToDisplay('8')">8</button>
-        <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('-')">-</button>
-        <button onclick="appendToDisplay('4')">4</button>
-        <button onclick="appendToDisplay('5')">5</button>
-        <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="appendToDisplay('*')">*</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('/')">/</button>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="clearDisplay()">AC</button>
+
+<div class="calculator">
+    <div class="display-container">
+        <div id="display-operation" class="display-operation"></div>
+
+        <div id="display-result" class="display-result">0</div>
     </div>
-  </div>
+
+    <div class="box-buttons">
+        <button class="btn-clear">AC</button>
+        <button>( )</button>
+        <button>%</button>
+        <button class="btn-operator">/</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="btn-operator">*</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="btn-operator">-</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="btn-operator">+</button>
+
+        <button class="btn-delete">⌫</button>
+        <button>0</button>
+        <button>.</button>
+        <button class="btn-equal">=</button>
+    </div>
+</div>
+
 </body>
 </html>
