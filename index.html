@@ -8,40 +8,41 @@
 </head>
 <body>
 
-<div class="calculator">
+<main class="calculator">
     <div class="display-container">
-        <div id="display-operation" class="display-operation"></div>
-
+        <div id="display-operation" class="display-operation" aria-hidden="true"></div>
         <div id="display-result" class="display-result">0</div>
     </div>
 
     <div class="box-buttons">
-        <button class="btn-clear">AC</button>
-        <button>( )</button>
-        <button>%</button>
-        <button class="btn-operator">/</button>
+        <button type="button" class="btn-clear" aria-label="Limpar tudo">AC</button>
+        <button type="button" aria-label="Parênteses">( )</button>
+        <button type="button" aria-label="Porcentagem">%</button>
+        <button type="button" class="btn-operator" aria-label="Dividir">/</button>
 
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="btn-operator">*</button>
+        <button type="button">7</button>
+        <button type="button">8</button>
+        <button type="button">9</button>
+        <button type="button" class="btn-operator" aria-label="Multiplicar">*</button>
 
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="btn-operator">-</button>
+        <button type="button">4</button>
+        <button type="button">5</button>
+        <button type="button">6</button>
+        <button type="button" class="btn-operator" aria-label="Subtrair">-</button>
 
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="btn-operator">+</button>
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+        <button type="button" class="btn-operator" aria-label="Somar">+</button>
 
-        <button class="btn-delete">⌫</button>
-        <button>0</button>
-        <button>.</button>
-        <button class="btn-equal">=</button>
+        <button type="button" class="btn-delete" aria-label="Apagar último dígito">⌫</button>
+        <button type="button">0</button>
+        <button type="button" aria-label="Ponto decimal">.</button>
+        <button type="button" class="btn-equal" aria-label="Calcular resultado">=</button>
     </div>
-</div>
+</main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
